@@ -2,11 +2,11 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    outline: dashed red 1px;
 }
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    outline: dashed red 1px;
 }
 header {
     height: 30vh;
@@ -27,25 +27,23 @@ header h1{
     padding: 1%;
 } 
 
-nav ul {
+nav {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
-    /* align-items: flex-end;
-    justify-content: space-between; */
-    /* font-size: 125%;
-    font-style: bold;
-    border-bottom: solid darkred; */
-
+    justify-content: space-between;
+    width: 50%;
 }
 
-nav ul li a {
+nav a {
     padding: 0 1%;
     color: white;
     text-decoration: none;
+    font-size: 125%;
+    font-style: bold;
+    border-bottom: solid 1px darkred;
 }
 
-nav ul li a:hover {
+nav a:hover {
     cursor: pointer;
     color: wheat;
 }
@@ -54,13 +52,19 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.section1 {
     width: 100%;
     height: 30vh;
     display: flex;
     padding: 5%;
+}
+
+section h2 {
+    flex-basis: 20%;
+    border-right: solid 3px darkred;
+}
+
+section div {
+    flex-basis: 80%;
 }
 
 .h2 {
@@ -75,13 +79,6 @@ section {
     flex-wrap: wrap;
     justify-content: flex-end;
     text-align: center;
-}
-
-.section2 {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    padding: 5%;
 }
 
 .h3  {
@@ -102,22 +99,8 @@ section {
 .Latest {
 }
 
-.section3 {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    padding: 5%;
-}
-
 .h4 {
     font-size: 150%;
-}
-
-.section4 {
-    width: 100%;
-    width: 30vh;
-    display: flex;
-    padding: 5%;
 }
 
 .h5 {
